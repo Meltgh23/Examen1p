@@ -25,4 +25,5 @@ export default function Perfil() {
       <img src={user.photoURL} alt="Foto de perfil" width="100" />
     </div>
   );
+  
 }
