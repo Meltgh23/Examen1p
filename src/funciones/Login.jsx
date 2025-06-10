@@ -1,5 +1,6 @@
 import { auth, provider, signInWithPopup } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import "../index.css";
 
 export default function Login() {
   const navigate = useNavigate();

@@ -4,6 +4,7 @@ import Home from "./funciones/Home";
 import Catalogo from "./funciones/Catalogo";
 import Contacto from "./funciones/Contacto";
 import Login from "./funciones/Login";
+import perfil from "./funciones/perfil";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/catalogo" element={<Catalogo />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/perfil" element={<perfil />} />
       </Routes>
     </BrowserRouter>
   );
