@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { auth, provider, signInWithPopup } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import "../index.css";
@@ -8,7 +9,7 @@ export default function Login() {
   const handleLogin = async () => {
     try {
       await signInWithPopup(auth, provider);
-      navigate("/"); // redirige al home
+      navigate("/"); 
     } catch (error) {
       console.error("Error en login:", error);
     }
